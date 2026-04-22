@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>师说 · PRD Demo</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header class="site-header" role="banner">
+      <div class="site-header-inner">
+        <div class="site-brand" aria-label="平台名称">
+          <img src="assets/logo.png" alt="师说" />
+        </div>
+        <div class="site-header-center">
+          <time class="site-header-date" id="site-header-date" datetime=""></time>
+        </div>
+        <div class="site-header-user" aria-label="用户信息">
+          <span class="site-user-name">张小年</span>
+          <span class="site-user-role-tag">教师</span>
+          <span class="site-user-sep">·</span>
+          <span class="site-user-org">华中师范大学附属小学</span>
+        </div>
+      </div>
+    </header>
+
+    <div class="app-shell">
+      <main class="main">
+        <div class="main-workspace">
+          <div class="main-view-col">
+            <div id="view"></div>
+          </div>
+          <aside class="assistant-panel" aria-label="师说助手">
+            <div class="assistant-head">
+              <h2>师说助手</h2>
+              <span>首页右侧 · 主 Agent（演示）</span>
+            </div>
+            <div class="chat-body" id="assistant-chat">
+              <div class="bubble">你好我是师说助手，有问题尽管问。</div>
+            </div>
+            <div class="chat-input-row">
+              <input id="assistant-input" type="text" placeholder="描述需求，例如：打开课堂观察上传" />
+              <button type="button" id="assistant-send">发送</button>
+            </div>
+          </aside>
+        </div>
+      </main>
+    </div>
+
+    <footer class="global-footer" role="contentinfo">
+      华中师范大学教育大数据应用技术国家工程研究中心 提供技术支持
+    </footer>
+
+    <button type="button" class="assistant-toggle" title="助手（小屏）">💬</button>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>

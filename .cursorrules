@@ -1,0 +1,4 @@
+- write-a-prd skill ONLY outputs Design Spec
+- PRD must be generated via prompts
+- Demo must be based on PRD
+- Do not skip review step
